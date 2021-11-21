@@ -52,8 +52,7 @@ body nav ul li {
 }
 
 body nav ul li.active {
-  border-radius: 10rem;
-  border: 0.1rem solid white;
+  text-decoration: underline;
 }
 
 body nav ul li a {

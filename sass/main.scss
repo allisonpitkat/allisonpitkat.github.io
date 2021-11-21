@@ -56,8 +56,7 @@ body {
         list-style: none;
 
         &.active {
-          border-radius: 10rem;
-          border: 0.1rem solid white;
+          text-decoration: underline;
         }
       
         a {
