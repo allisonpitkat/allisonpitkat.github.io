@@ -9,16 +9,17 @@ html, body {
 }
 
 * {
-  border: 0.1rem solid black;
+  border: 0.1rem solid white;
 }
 
 body {
-  background-image: url("../img/winteriscoming.gif");
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../img/winteriscoming.gif");
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
+  background-position: center, center;
 }
 
 body nav {
