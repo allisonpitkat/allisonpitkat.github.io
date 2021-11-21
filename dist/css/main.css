@@ -4,22 +4,27 @@ html, body {
 }
 
 @font-face {
-  font-family: myFirstFont;
-  src: url(../fonts/lihataja/Lihataja.ttf);
+  font-family: vanityLightNarrow;
+  src: url("../fonts/vanity/Vanity - TTF/Vanity-LightNarrow.ttf");
 }
 
 body {
   background-image: url("../img/winteriscoming.gif");
+  height: 100%;
+  background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 body nav {
   background-color: transparent;
   position: fixed;
   bottom: 0;
-  padding: 10px 10px 0px 10px;
+  padding: 20px 10px 0px 10px;
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
 body nav ul {
@@ -37,7 +42,7 @@ body nav ul li {
 }
 
 body nav ul li a {
-  font-family: myFirstFont;
+  font-family: vanityLightNarrow;
   color: white;
   text-decoration: none;
 }
@@ -51,6 +56,9 @@ body .social-icons {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 8px;
+  bottom: 0;
+  -webkit-column-width: -4px;
+          column-width: -4px;
 }
 
 body .social-icons i {
