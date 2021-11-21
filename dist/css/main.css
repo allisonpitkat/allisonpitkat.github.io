@@ -51,6 +51,11 @@ body nav ul li {
   list-style: none;
 }
 
+body nav ul li.active {
+  border-radius: 10rem;
+  border: 0.1rem solid white;
+}
+
 body nav ul li a {
   font-family: vanityLightNarrow;
   color: white;
