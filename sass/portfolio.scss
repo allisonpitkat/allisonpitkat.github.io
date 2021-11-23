@@ -20,11 +20,6 @@ body {
   src: url("../fonts/vanity/Vanity - TTF/Vanity-LightNarrow.ttf");
 }
 
-@font-face {
-  font-family: pamsettoTff;
-  src: url("../fonts/scriptina/SCRIPTIN.ttf");
-}
-
 // * {
 //   border: 0.1rem solid white;
 // }
@@ -39,57 +34,30 @@ body {
 .social-icons {
   display: flex;
   flex-direction: column;
-  margin: 0px;
-  padding: auto;
+  padding: 8px;
   width: fit-content;
   position: fixed;
   top: 0;
-  bottom: 0;
 
   i {
     font-size: 2rem;
     color: white;
-    padding: 0px;
-    margin: 7px;
+    // padding: 10px;
+    margin: 3px;
   }
 }
 body {
-  font-family: "pamsettoTff";
   overflow: hidden;
   background: url("../img/winteriscoming.gif");
   background-attachment: fixed;
   background-size: cover;
   background-position: center, center;
-  // background-repeat: no-repeat;
-
-  h1 {
-    top: -10px;
-    margin: -30px;
-    color: #212121;
-    display: flex;
-    text-align: center;
-    line-height: -10rem;
-    font-family: "pamsettoTff";
-    font-size: 9.6vh;
-    // word-spacing: px;
-    justify-content: center;
-
-    p {
-      br {
-        display: block;
-        margin-bottom: 2px;
-        font-size: 2px;
-      }
-
-      a {
-      }
-    }
-  }
+  padding-bottom: 5rem;
 
   nav {
     background-color: transparent;
     position: fixed;
-    bottom: 0;
+    bottom: -45px;
     width: 100%;
     font-size: 2rem;
     margin: 0;
@@ -107,9 +75,9 @@ body {
         margin: 1rem;
         list-style: none;
 
-        // &.active {
-        //   text-decoration: underline;
-        // }
+        &.active {
+          text-decoration: underline;
+        }
 
         a {
           font-family: "vanityLightNarrow";
@@ -117,6 +85,20 @@ body {
           text-decoration: none;
         }
       }
+    }
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    // height: 100%;
+    align-items: center;
+
+    .main-content {
+      height: 100vh;
+      width: 70vw;
+      background-color: #000;
+      color: white;
     }
   }
 }

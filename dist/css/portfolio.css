@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -7,11 +6,6 @@ body {
 @font-face {
   font-family: vanityLightNarrow;
   src: url("../fonts/vanity/Vanity - TTF/Vanity-LightNarrow.ttf");
-}
-
-@font-face {
-  font-family: pamsettoTff;
-  src: url("../fonts/scriptina/SCRIPTIN.ttf");
 }
 
 .social-icons {
@@ -22,58 +16,33 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0px;
-  padding: auto;
+  padding: 8px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   position: fixed;
   top: 0;
-  bottom: 0;
 }
 
 .social-icons i {
   font-size: 2rem;
   color: white;
-  padding: 0px;
-  margin: 7px;
+  margin: 3px;
 }
 
 body {
-  font-family: 'pamsettoTff';
   overflow: hidden;
   background: url("../img/winteriscoming.gif");
   background-attachment: fixed;
   background-size: cover;
   background-position: center, center;
-}
-
-body h1 {
-  top: -10px;
-  margin: -30px;
-  color: #212121;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  line-height: -10rem;
-  font-family: "pamsettoTff";
-  font-size: 9.6vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-body h1 p br {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 2px;
+  padding-bottom: 5rem;
 }
 
 body nav {
   background-color: transparent;
   position: fixed;
-  bottom: 0;
+  bottom: -45px;
   width: 100%;
   font-size: 2rem;
   margin: 0;
@@ -103,9 +72,32 @@ body nav ul li {
   list-style: none;
 }
 
+body nav ul li.active {
+  text-decoration: underline;
+}
+
 body nav ul li a {
-  font-family: "vanityLightNarrow";
+  font-family: 'vanityLightNarrow';
   color: white;
   text-decoration: none;
 }
-/*# sourceMappingURL=main.css.map */
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main-content {
+  height: 100vh;
+  width: 70vw;
+  background-color: #000;
+  color: white;
+}
+/*# sourceMappingURL=portfolio.css.map */
