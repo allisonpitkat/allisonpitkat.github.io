@@ -52,13 +52,13 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center, center;
-  // background-repeat: no-repeat;
+  padding-bottom: 5rem;
 
 
   nav {
     background-color: transparent;
     position: fixed;
-    bottom: 0;
+    bottom: -45px;
     width: 100%;
     font-size: 2rem;
     margin: 0;
@@ -87,6 +87,20 @@ body {
          
         }
       }
+    }
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    // height: 100%;
+    align-items: center;
+
+    .main-content {
+      height: 100vh;
+      width: 70vw;
+      background-color: #000;
+      color: white;
     }
   }
 }
